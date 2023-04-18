@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+		<title>Game</title>
+	</head>
+	<body>
+		<div id="container">
+			<canvas id="canvas" width="10" height="0"></canvas>
+
+			<div id="titleScreen">
+				<div class="title"></div>	
+
+				<button id="playBtn">Play</button>
+			</div>
+
+			<div id="gameover">
+				<h2 id="message">Game Over</h2>
+				<p id="score">Score: 0</p>
+				<button id="playagain">Play Again</button>
+			</div>
+
+			<div id="shop">
+				<h2>Shop</h2>
+				<p>Buy upgrades with your score</p>
+
+				<div id="item">Two Projectiles - 2000  <button id="2projBtn">Buy</button></div>
+
+				<div id="item">Shotgun - 10000<button id="shotgunBtn">Buy</button></div>
+
+				<div id="item">Rocket Gun - 25000<button id="rocketBtn">Buy</button></div>
+
+				<div id="item">X-Ray Cannon - 50000 <button id="xrayBtn">Buy</button></div>
+
+				<div id="item">Laser - 125000 <button id="laserBtn">Buy</button></div>
+
+				<div id="item">Flamethrower - 200000 <button id="flameBtn">Buy</button></div>
+			</div>
+		</div>
+
+		<script src="wall.js"></script>
+		<script src="player.js"></script>
+		<script src="projectile.js"></script>
+		<script src="enemies.js"></script>
+		<script src="particles.js"></script>
+		<script src="text.js"></script>
+		<script src="settings.js"></script>
+		<script src="dom.js"></script>
+		<script src="input.js"></script>
+		<script src="misc_functions.js"></script>
+		<script src="hpbars.js"></script>
+
+		<script src="game.js"></script>
+	</body>
+</html>
+
+
+
+
