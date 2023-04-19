@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*, html {
+	font-family: "VT323", monospace;
+}
+
+body {
+	background-color: #19191a;
+	margin: 0px;
+}
+
+#container {
+	position: relative;
+}
+
+#canvas {
+	background-color: #19191a;
+	border: 1px solid white;
+	margin-top: 100px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	image-rendering: pixelated;
+}
+
+#gameover {
+	width: 300px;
+	height: 190px;
+	border:  none;
+	border-radius: 10px;
+	background-color:  #2f2f30;
+	position: absolute;
+	display: none;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top:  350px;
+	color: white;
+}
+
+#gameover h2, #gameover p{
+	color: white;
+	text-align: center;
+}
+
+#gameover h2 {
+	padding-top: 5px;
+	font-size: 28px;
+}
+
+#gameover p {
+	font-size: 24px;
+}
+
+#playagain {
+	color: white;
+	outline: none;
+	background-color: dodgerblue;
+	padding: 10px;
+	width:  200px;
+	height:  42px;
+	display: block;
+	position: relative;
+	margin: auto;
+	border-radius: 5px;
+	border: none;
+	cursor:  pointer;
+	transition: 1s all;
+	font-size: 24px;
+}
+
+#playagain:hover { background-color: cornflowerblue }
+
+#shop {
+	font-size: 1.15em;
+	width: 522px;
+	height: 270px;
+	background-color: #2f2f30;
+	border: none;
+	color: white;
+	border-radius: 10px;
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top:  350px;
+}
+
+#shop h2 {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#shop p {
+	text-align: center;
+	margin-top: -10px;
+}
+
+#item {
+	border: 2px solid gainsboro;
+	width: 220px;
+	margin-left: 10px;
+	padding:  10px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+#item button {
+	outline: none;
+	cursor: pointer;
+	padding:  5px 10px 5px 10px;
+	font-size: 16px;
+	background-color: dodgerblue;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	transition: 1s all;
+	float: right;
+}
+
+#item #shotgunBtn { margin-left: 54px }
+#item #rocketBtn { margin-left: 29px }
+#item #xrayBtn { margin-left: 4px }
+#item #laserBtn { margin-left: 60px }
+#item #flameBtn { margin-left: 2px }
+
+
+#item button:hover { background-color: cornflowerblue }
+
+#titleScreen {
+	margin: 0px;
+	padding: 0px;
+	background-color: #19191a;
+	width: 1000px;
+	height: 562px;
+	display: block;
+	position: fixed;
+	left: 50%;
+	top: 101px;
+	transform: translateX(-50%);
+	border-radius: 10px;   
+	background-image: url("./titlescreen.jpg");
+	background-size: cover;
+	background-repeat: none;
+}
+
+#playBtn {
+	outline: none;
+	border: none;
+	background-color: #19191a;
+	color: white;
+	padding: 10px;
+	font-size: 2em;
+	margin: 0px;
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+}
+
+#playBtn:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+.title {
+	display: block;
+	position: absolute;
+	width: 550px;
+	height: 100px;
+	left: 25%;
+	top: 25%;
+	transform: translate(-50%, -50%);
+	background-image: url("./title.png");
+	background-size: cover;
+	background-repeat: none;
+	animation: title-rotate 2s linear infinite;
+}
+
+@keyframes title-rotate {
+	0% { transform: rotate(0); }
+	25% { transform: rotate(-20deg); }
+	75% { transform: rotate(20deg); }
+	100% { transform: rotate(0deg); }
+}
